@@ -37,12 +37,12 @@ Contoh hasil eksekusi pada dataset ini:
 Features: 13
 Train size: 820
 Test size: 205
-Accuracy: 0.8000
+Accuracy: 0.8098
 Confusion matrix entries:
-(0, 0):79
-(0, 1):28
-(1, 0):13
-(1, 1):85
+(0, 0):75
+(0, 1):32
+(1, 0):7
+(1, 1):91
 ```
 
 ## Kustomisasi
@@ -60,3 +60,4 @@ Parameter dapat diubah langsung di `naive_bayes.py`:
 ## Referensi Berkas
 - Dataset: `heart.csv`
 - Skrip: `naive_bayes.py`
+- Dokumentasi Peningkatan Akurasi: [README_Accuracy_Improvement.md](README_Accuracy_Improvement.md)

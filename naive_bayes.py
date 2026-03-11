@@ -189,7 +189,7 @@ def main() -> None:
     # --------------------------------------------
     X, y, headers = load_csv("heart.csv")
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, seed=42)
-    model = GaussianNB(var_smoothing=1e-9)
+    model = GaussianNB(var_smoothing=0.1)
     model.fit(X_train, y_train)
     y_pred = model.predict(X_test)
     acc = accuracy(y_test, y_pred)
